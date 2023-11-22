@@ -1,0 +1,19 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.feeling-container {
+  margin: 1rem;
+}
+
+.feeling {
+  border-radius: 0.25rem;
+}
+
+input[type=text]{
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
