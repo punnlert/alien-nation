@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc } from "firebase/firestore";
+import { getFirestore, collection, addDoc, Timestamp } from "firebase/firestore";
 import './App.css'
 
 const firebaseConfig = {
@@ -24,7 +24,8 @@ function App() {
   const handleClick = () => {
     if (messageInput) {
       addDoc(collection(db, "feelings"), {
-          message: messageInput
+          message: messageInput,
+          time: Timestamp
         });
   
       setMessage("");
