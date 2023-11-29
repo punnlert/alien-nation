@@ -25,7 +25,7 @@ function App() {
     if (messageInput) {
       addDoc(collection(db, "feelings"), {
           message: messageInput,
-          time: serverTimestamp()
+          time: Timestamp.fromDate(new Date())
         });
   
       setMessage("");
